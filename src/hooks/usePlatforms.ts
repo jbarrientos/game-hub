@@ -1,12 +1,12 @@
 import platforms from "../data/platforms";
-import useData from "./useData";
+// import useData from "./useData";
 
 
-interface Platform{
-  id: number;
-  name: string;
-  slig: string;
-}
+// interface Platform{
+//   id: number;
+//   name: string;
+//   slig: string;
+// }
 
 // const usePlatforms = () => useData<Platform>('/platforms/lists/parents')
 const usePlatforms = () => ({ data: platforms, isLoading: false, error: null});

@@ -1,4 +1,5 @@
-import { Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup, Button, Image, Text, HStack } from "@chakra-ui/react"
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Card, CardBody, Heading, Image, HStack } from "@chakra-ui/react"
 import { Game } from "../hooks/useGames";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";

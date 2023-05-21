@@ -17,11 +17,10 @@ const GameGrid = ({ gameQuery } : Props) => {
 
   const skeletons = [1,2,3,4,5,6];
 
+  if(error) return <Text colorScheme="red">{error}</Text>;
+
+
   return (
-    <>
-      { error && <Text colorScheme="red">{error}</Text>}
-
-
       <SimpleGrid columns={{sm: 1, md: 2, lg: 3, xl: 4}}
       padding={10}
       spacing={6}>
@@ -31,7 +30,6 @@ const GameGrid = ({ gameQuery } : Props) => {
         :
         games.map((game) => <GameCardContainer key={game.id}> <GameCard game={game} /> </GameCardContainer>)}
       </SimpleGrid>
-    </>
   )
 }
 
